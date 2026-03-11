@@ -14,6 +14,12 @@ public class prefijos {
         System.out.println(b4);
 
 
+        // suma de strings
+        String x = "";
+        x = x + "Hola ";
+        x = x + "Que tal?";
+        System.out.println(x);
+
 
     }
 }
