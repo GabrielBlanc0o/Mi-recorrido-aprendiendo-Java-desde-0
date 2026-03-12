@@ -1,15 +1,23 @@
-☕ Java Mastery Journey
-This repository documents my intensive learning curve in Java. Started from scratch in March 2026.
+# ☕ Java Learning Journey
 
-🚀 Milestones
-Week 1: Syntax basics, Control Structures, and Matrix manipulation.
+This repository serves as a structured documentation of my intensive Java learning process. Starting from core syntax to advanced logic, I am building a solid foundation in Software Engineering.
 
-Next Steps: Deep dive into OOP (Object Oriented Programming) and Hibernate.
+## 📂 Project Structure
 
-📂 Project Structure
-Basics/: Entry point and basic data types.
+- **01-syntax-fundamentals**: Core language basics, constants, and data types.
+- **02-control-flow**: Decision-making structures (if/switch) and iteration patterns (loops).
+- **03-logic-and-math**: Algorithm practice and mathematical logic challenges.
+- **04-arrays-and-matrices**: Handling multi-dimensional data structures and complex indexing.
+- **05-string-manipulation**: Advanced text processing and substring operations.
 
-Logic/: Loops, conditionals, and complex algorithms.
+## 🚀 Goals
+- [x] Master basic logic and loops.
+- [x] Deep dive into Matrix manipulation.
+- [ ] Transition to Object-Oriented Programming (OOP) - **Current Focus**.
+- [ ] Implement Hibernate and Spring Boot for scalable solutions.
+
+---
+*“Turning complex logic into scalable solutions.”*
 
 Write by Gabriel Blanco
 
