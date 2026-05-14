@@ -21,12 +21,12 @@ public class Desarrollador {
 
     }
     // getter para leer datos privados
-/*
+
     public String getNombre() {return nombre;}
     public String getStack() {return stack;}
-    metodos old en memoria getters :v
+   // metodos old en memoria getters :v
 
- */
+
 
     // alternativa a los getter de arriba y imprime todo de una siempre usar ovverride para evitar
     // crear un getter por cada variable

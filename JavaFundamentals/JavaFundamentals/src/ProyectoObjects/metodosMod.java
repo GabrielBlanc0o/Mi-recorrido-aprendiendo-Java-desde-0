@@ -33,19 +33,26 @@ public class metodosMod{
                 menu = false;
             }
         }
+
         // mostrar todo el equipo
-
+        System.out.print("¿Qué stack deseas buscar en el equipo?: ");
+        String busqueda = sc.nextLine();
         System.out.println("\n--- Equipo final Registrado ---");
-        buscarPorStack(equipo,"");
 
-
-
+        buscarPorStack(equipo,busqueda);
    }
 
    public static void buscarPorStack(ArrayList<Desarrollador> lista, String stackBuscado){
+        boolean encontrado = false;
         for (Desarrollador dev : lista){
-                System.out.println(dev);
+                if (dev.getStack().equalsIgnoreCase(stackBuscado)){
+                    System.out.printf("Info: \n "+ dev);
+                    encontrado = true;
+                }
             }
+       if (!encontrado) {
+           System.out.println("No se encontraron desarrolladores con el stack: " + stackBuscado);
+       }
         }
    }
 
