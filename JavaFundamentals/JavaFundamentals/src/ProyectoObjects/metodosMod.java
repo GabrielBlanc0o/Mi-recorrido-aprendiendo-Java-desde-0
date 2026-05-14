@@ -1,25 +1,52 @@
 package ProyectoObjects;
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class metodosMod{
     public static void main(String[] args){
-        // nueva lista de arrays
+
+        Scanner sc = new Scanner(System.in);
         ArrayList<Desarrollador> equipo = new ArrayList<>();
+        boolean menu = true ;
 
-        equipo.add(new Desarrollador("Gabriel","Java/Spring Boot",3));
-        equipo.add(new Desarrollador("Pepe","Pascal",5));
+        while (menu){
+            // nueva lista de arrays
 
-        buscarPorStack(equipo,"Java/SpringBoot");
+            System.out.println("Ingresa tu nombre: ");
+            String nombre = sc.nextLine();
+
+            System.out.println("Ingresa tu lenguaje de programacion favorito: ");
+            String stack = sc.nextLine();
+
+            System.out.println("Ingresa tus años de exp: ");
+            int experiencia = sc.nextInt();
+            sc.nextLine();
+
+            equipo.add(new Desarrollador(nombre,stack,experiencia));
+            System.out.println("Agregado exitosamente.");
+            System.out.println("Deseas agregar otro? (S/N): ");
+            String opcion = sc.nextLine();
+
+            if (opcion.equalsIgnoreCase("n")){
+                menu = false;
+            }
+        }
+        // mostrar todo el equipo
+
+        System.out.println("\n--- Equipo final Registrado ---");
+        buscarPorStack(equipo,"");
+
+
+
    }
 
    public static void buscarPorStack(ArrayList<Desarrollador> lista, String stackBuscado){
         for (Desarrollador dev : lista){
-            // accedemos al atributo a traves del metodo getter
-            if (dev.getStack().equals(stackBuscado)){
-                System.out.println("Encontrado: " + dev.getNombre() + " domina " + stackBuscado );
-
+                System.out.println(dev);
             }
         }
    }
-}
+
+
