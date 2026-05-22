@@ -49,9 +49,9 @@ public class TorneoAlgoritmos{
         }
         System.out.println("\n=================================");
         if (energiaMaxA <= 0) {
-            System.out.println("🏆 ¡EL GANADOR ABSOLUTO ES EL PROGRAMADOR B! 🏆");
+            System.out.println(" ¡EL GANADOR ABSOLUTO ES EL PROGRAMADOR B! ");
         } else {
-            System.out.println("🏆 ¡EL GANADOR ABSOLUTO ES EL PROGRAMADOR A! 🏆");
+            System.out.println(" ¡EL GANADOR ABSOLUTO ES EL PROGRAMADOR A! ");
         }
         System.out.println("=================================");
     }
